@@ -16,9 +16,9 @@ UNIT = 0x1
 client = ModbusTcpClient('10.1.2.190', port=502, timeout=1)
 
 while True:
-   request = client.read_holding_registers(100, 3)
+   request = client.read_holding_registers(99, 3)
    result = request.registers   # print(result.bits[0])
    print(result)
-   print(result[0])
+   # print(result[0])
    time.sleep(1)
 client.close()

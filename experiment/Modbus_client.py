@@ -17,7 +17,7 @@ def generate_modbus_rtu_message(address, function_code, register_address, data):
 
 
 def main():
-    host = '10.1.2.190'  # Server IP address
+    host = '0.0.0.0'  # Server IP address
     port = 502       # Server port
     # Create a socket object
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -30,8 +30,8 @@ def main():
         # Send data to the server
         # 使用範例
         address = 100         # Modbus 地址
-        function_code = 6   # 功能碼：寫單個保持寄存器
-        register_address = 0  # 寄存器地址
+        function_code = 3   # 功能碼：寫單個保持寄存器
+        register_address =   # 寄存器地址
         data = 2            # 要寫入的數據
 
         hex_message = generate_modbus_rtu_message(

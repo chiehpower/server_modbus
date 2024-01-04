@@ -1,0 +1,5 @@
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Requirement already satisfied: pymodbus in /home/chieh/.local/lib/python3.8/site-packages (2.5.3)
+Requirement already satisfied: six>=1.15.0 in /home/chieh/.local/lib/python3.8/site-packages (from pymodbus) (1.16.0)
+Requirement already satisfied: pyserial>=3.4 in /home/chieh/.local/lib/python3.8/site-packages (from pymodbus) (3.5)
